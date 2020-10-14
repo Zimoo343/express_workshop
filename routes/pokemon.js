@@ -28,7 +28,7 @@ pokemon.get('/:name([A-Za-z]+)', (req, res, next) => {
 
     (pkmn.length > 0) ? 
         res.status(200).send(pkmn) : 
-        res.status(404).send("Pokemon no encontrado");
+        res.status(404).send("Pokemon no encontrado.");
     
 });
 
