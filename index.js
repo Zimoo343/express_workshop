@@ -7,8 +7,8 @@ const pokemon = require('./routes/pokemon');
 const user = require('./routes/user');
 //middleware
 const auth =  require('./middleware/auth');
-const notFound = require('.middleware/noFound')
-const index = require('.middleware/index')
+const notFound = require('./middleware/notFound')
+const index = require('./middleware/index')
 
 app.use(morgan('dev'));
 app.use(express.json());
